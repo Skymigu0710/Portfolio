@@ -14,8 +14,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-zinc-900 shadow z-50 text-gray-200 h-20 z-[999]">
-      <div className="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+    <nav className="fixed top-0 left-0 w-full bg-zinc-900 shadow z-50 text-gray-200 border-b border-white/30 h-20 z-[999]">
+      <div className="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center ">
         <span className="font-bold text-lg">Cielo</span>
 
         <ul className="hidden md:flex gap-16  ">

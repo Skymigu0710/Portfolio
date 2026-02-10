@@ -9,9 +9,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const PhotoCarousel = () => {
     return (
-        <div className="relative w-full overflow-hidden">
-
-
+        <div className="absolute inset-0 -z-10">
             <Swiper
                 modules={[Pagination, Navigation, Autoplay]}
                 spaceBetween={30}
@@ -19,26 +17,20 @@ const PhotoCarousel = () => {
                 pagination={{ clickable: true }}
                 navigation
                 autoplay={{ delay: 3000 }}
-                className="w-full max-w-md h-[600px]"
+                className="w-full h-full"
             >
-                <SwiperSlide>
-                    <img
-                        src="/images/me5.jpeg"
-                        className=" w-full h-full object-cover"
-                    />
-                </SwiperSlide>
 
                 <SwiperSlide>
                     <img
                         src="/images/me1.jpeg"
-                        className="w-full h-full object-cover object-center "
+                        className="w-full h-full object-cover object-[center_60%]"
                     />
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <img
                         src="/images/me3.jpeg"
-                        className="w-full h-full object-cover object-[bottom_40%]"
+                        className="w-full h-full object-cover object-[center_30%]"
                     />
                 </SwiperSlide>
             </Swiper>

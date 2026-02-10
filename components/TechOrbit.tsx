@@ -8,24 +8,17 @@ export default function TechOrbit() {
     { name: "Git", img: "/images/git.png" },
   ];
 
-  const size = 420; 
-  const radius = size / 2 - 40; 
-
   return (
     <div
-      className="relative flex items-center justify-center overflow-hidden"
-      style={{ width: size, height: size }}
-    >
-
-  
-      <div className="absolute w-75 h-75 rounded-full overflow-hidden">
+      className="relative flex  items-center  justify-center  overflow-hidden w-[340px] max-w-[600px] aspect-square lg:w-[500px]"  >
+      <div className="absolute w-2/3 h-2/3 rounded-full overflow-hidden">
         <img
           src="/images/me2.jpeg"
           className="w-full h-full object-cover object-top"
         />
       </div>
 
-      <div className="absolute w-full h-full animate-spin-slow">
+      <div className="absolute inset-0 animate-spin-slow">
         {techs.map((tech, index) => {
           const angle = (index / techs.length) * 360;
 
@@ -37,7 +30,7 @@ export default function TechOrbit() {
                 transform: `
                   translate(-50%, -50%)
                   rotate(${angle}deg)
-                  translate(${radius}px)
+                  translate(350%)
                   rotate(-${angle}deg)
                 `,
               }}
@@ -45,7 +38,7 @@ export default function TechOrbit() {
               <img
                 src={tech.img}
                 alt={tech.name}
-                className="w-12 h-12"
+                className="w-10 h-10 sm:w-12 sm:h-12"
               />
             </div>
           );

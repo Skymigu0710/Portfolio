@@ -29,6 +29,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -36,4 +37,63 @@ body {
 
 .animate-spin-slow {
   animation: spin-slow 15s linear infinite;
+}
+
+@keyframes squareOrbit {
+  0% {
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  25% {
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+
+  26% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  51% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  75% {
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+
+  76% {
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+  }
+}
+
+
+.animate-square-orbit {
+  position: absolute;
+  animation: squareOrbit 15s linear infinite;
+}
+
+.animate-square-orbit-ghost{
+  position: absolute;
+  animation: squareOrbit 15s linear infinite;
+   animation-delay: -2.75s;
+    z-index: 10;
 }
