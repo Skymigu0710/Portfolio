@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-import { title } from "process";
+
 
 export default function ProjectsSection() {
     const projects = [
@@ -17,6 +17,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/Skymigu0710/UTPConnect",
+            captura: "images/screen1.jpg",
         },
 
         {
@@ -33,6 +34,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/tu-link",
+            captura: "images/screen2.png",
         },
 
         {
@@ -48,6 +50,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/tu-link",
+            captura: "images/screen3.png",
         },
         {
             title: " IA Repository",
@@ -60,12 +63,13 @@ export default function ProjectsSection() {
                 { name: "Numpy", icon: "/images/numpy.png" }
             ],
 
-            link: "https://github.com/Skymigu0710/IAProyects/tree/main"
+            link: "https://github.com/Skymigu0710/IAProyects/tree/main",
+            captura: "images/screen4.png",
         },
         {
-            title: " Inestigación: Aplicación de la IA en  trastornos emocionales ",
-            description: "Esta investigación consiste sobre la intervención de la Inteligencia Artificial en la detección temprana de trastornos emocionales"
-                + " , con el objetivo de encontrar técnicas de aprendizaje que presenten una mayor exactitud en su pronóstico ante trastornos como depresión, ansiedad y estrés",
+            title: "Aplicación de la IA en  trastornos emocionales ",
+            description: "Investigación sobre la intervención de la IA en la detección temprana de trastornos emocionales"
+                + " . Priorizar técnicas de aprendizaje que presenten una mayor exactitud en su pronóstico ante trastornos como depresión, ansiedad y estrés",
 
             techs: [
                 { name: "TensorFlow", icon: "/images/tensorflow.png" },
@@ -74,10 +78,11 @@ export default function ProjectsSection() {
                 { name: "Numpy", icon: "/images/numpy.png" }
             ],
 
-            link: "https://github.com/Skymigu0710/IAProyects/tree/main"
+            link: "https://github.com/Skymigu0710/IAProyects/tree/main",
+            captura: "images/screen5.png",
         },
         {
-            title: " Inteligencia de Negocios(BI) : Analisis de datos del procesos de admisión UNI ",
+            title: " BI : Analisis de datos del procesos de admisión UNI ",
             description: "Este proyecto consiste en el análisis de datos de los procesos de admisión del periodo 2021-2023. El objetivo principál de este análisis es optimizar "+
             "la toma de desiciones estratégicas en la Universidad Nacional de Ingeniería (UNI)",
 
@@ -89,7 +94,8 @@ export default function ProjectsSection() {
                 { name: "Microsoft SQL server managment", icon: "/images/mssms.png" }
             ],
 
-            link: "https://github.com/Skymigu0710/IAProyects/tree/main"
+            link: "https://github.com/Skymigu0710/IAProyects/tree/main",
+            captura: "images/screen6.png",
         },
     ];
     return (

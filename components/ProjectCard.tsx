@@ -5,6 +5,7 @@ interface ProjectCardProps {
     description: string;
     techs: { name: string; icon: string }[];
     link: string;
+    captura: string;
 }
 
 export default function ProjectCard({
@@ -12,17 +13,16 @@ export default function ProjectCard({
     description,
     techs,
     link,
+    captura,
 }: ProjectCardProps) {
     return (
         <div className="bg-zinc-800 rounded-2xl p-6 flex flex-col justify-between shadow-lg hover:scale-[1.02] transition">
-
-            {/* INFO */}
             <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-cyan-400">
                     {title}
                 </h3>
 
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-300  text-sm leading-relaxed">
                     {description}
                 </p>
 
@@ -43,25 +43,22 @@ export default function ProjectCard({
                         </div>
                     ))}
                 </div>
-            </div>
-
-            <div className="relative mt-6 flex justify-between items-center w-full">
-
+                <div className="flex  justify-center  h-50">
                 <img
-                    src="/images/flower.png"
-                    className="w-18 h-18"
+                    src={captura}
+                    className="flex pb-4"
                 />
+                </div>
+            </div>          
+            <a
+                href={link}
+                target="_blank"
+                className="flex items-center gap-2 text-cyan-400 justify-end hover:text-cyan-300 transition"
+            >
+                Ver proyecto
+                <ExternalLink size={18} />
+            </a>
 
-                <a
-                    href={link}
-                    target="_blank"
-                    className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition"
-                >
-                    Ver proyecto
-                    <ExternalLink size={18} />
-                </a>
-
-            </div>
         </div>
     );
 }
