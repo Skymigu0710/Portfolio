@@ -202,7 +202,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/maricielo-alata-roman-76394a333/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative pointer-events-auto gap-2 bg-cyan-600  items-center w-10 h-10 rounded-lg border border-1 border-white">
+                    className="z-50 relative pointer-events-auto gap-2 bg-cyan-600  items-center w-10 h-10 rounded-lg border border-3 border-white">
                     <img src="/images/linkendIn.png"
                       className="inset-0 "></img>
                   </a>
@@ -210,7 +210,7 @@ export default function Home() {
                     href="https://github.com/Skymigu0710"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative pointer-events-auto gap-2 bg-white  items-center w-10 h-10 rounded-lg border border-1 border-white">
+                    className="z-50 relative pointer-events-auto gap-2 bg-white  items-center w-10 h-10 rounded-lg border border-1 border-white">
                     <img src="/images/git.png" className="inset-0 " />
                   </a>
                 </div>

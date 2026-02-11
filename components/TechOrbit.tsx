@@ -5,7 +5,7 @@ export default function TechOrbit() {
     { name: "MySQL", img: "/images/mysql.png" },
     { name: "Python", img: "/images/python.png" },
     { name: "Tailwind", img: "/images/tailwind.png" },
-    { name: "Git", img: "/images/git.png" },
+    { name: "Git", img: "/images/tensorflow.png" },
   ];
 
   return (
