@@ -22,7 +22,7 @@ const PhotoCarousel = () => {
 
                 <SwiperSlide className="overflow-hidden">
                     <img
-                        src="/images/me1.jpeg"
+                        src="/images/fondo1.gif"
                         className="w-full h-full object-cover object-[center_60%] "
                     />
                 </SwiperSlide>

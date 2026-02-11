@@ -5,7 +5,6 @@ interface ProjectCardProps {
     description: string;
     techs: { name: string; icon: string }[];
     link: string;
-    captura: string;
 }
 
 export default function ProjectCard({
@@ -13,10 +12,9 @@ export default function ProjectCard({
     description,
     techs,
     link,
-    captura,
 }: ProjectCardProps) {
     return (
-        <div className="bg-zinc-800 rounded-2xl p-6 flex flex-col justify-between shadow-lg hover:scale-[1.02] transition">
+        <div className="bg-white/6 rounded-2xl p-6 flex flex-col justify-between shadow-lg hover:scale-[1.02] transition">
             <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-cyan-400">
                     {title}
@@ -42,12 +40,6 @@ export default function ProjectCard({
                             </span>
                         </div>
                     ))}
-                </div>
-                <div className="flex  justify-center  h-50">
-                <img
-                    src={captura}
-                    className="flex pb-4"
-                />
                 </div>
             </div>          
             <a

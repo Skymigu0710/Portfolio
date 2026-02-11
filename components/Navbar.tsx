@@ -37,7 +37,7 @@ export default function Navbar() {
 
         <span
           onClick={() => handleScroll("home")}
-          className="font-extrabold text-2xl tracking-widest text-white cursor-pointer md:text-3xl"
+          className="text-2xl tracking-widest text-white cursor-pointer md:text-3xl"
         >
           𝗠𝗔𝗥
         </span>

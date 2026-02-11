@@ -11,24 +11,25 @@ export default function Home() {
       <Navbar />
       <main className="relative w-full bg-black md:pt-0">
         <Section id="home" title="">
-          <section className="relative min-h-screen overflow-hidden pt-10 lg:pt-0">
-            <div className="absolute inset-0 -z-0">
-              <Carousel />
+          <section className="flex flex-col justify-center gap-5 items-center min-h-screen pt-1/2 md:px-10 lg:pt-0 lg:flex-row">
+            <div className="absolute inset-0 -z-0 
+            bg-[url('/images/fondo1.gif')] 
+            bg-repeat 
+            bg-auto 
+            opacity-40">
             </div>
-            <div className="absolute inset-0 bg-black/80 -z-0"></div>
-            <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-5 text-center">
-              <p className=" text-6xl  font-bold bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 bg-clip-text text-transparent animate-pulse lg:text-7xl">
-                <strong className="block text-2xl lg:text-3xl">¡Hola!, soy</strong>
+            <div className="relative z-20 flex flex-col px-5 text-center">
+              <p className="  text-2xl text-left bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 bg-clip-text text-transparent md:text-6xl lg:text-7xl">
+                <strong className="block">¡Hola!, soy</strong>
                 <span className="block">Maricielo Alata Roman</span>
               </p>
-              <p className="mt-4 text-lg text-gray-200">
+              <p className="mt-4 text-sm text-gray-200 md:text-xl">
                 Desarrolladora FullStack | Analista de datos | Soporte TI
               </p>
-
-              <p className="mt-6 text-lg text-gray-200 tracking-wide">
+              <p className="mt-6 text-sm text-gray-200 tracking-wide md:text-xl">
                 — Ingeniería de Sistemas e Informática —
               </p>
-              <p className="mt-4 text-lg text-gray-400 ">
+              <p className="mt-4 text-base text-gray-400 md:text-lg">
                 La innovación y creatividad son aspectos clave de mi desarrollo profesional.
               </p>
               <a
@@ -41,10 +42,14 @@ export default function Home() {
                 Ver CV
               </a>
             </div>
-
+            <div className="w-64 h-64 bg-pink-200 rounded-[50%_50%_20%_70%/60%_60%_20%_60%] overflow-hidden z-10 md:w-80 md:h-80">
+              <img
+                src="/images/ME.jpeg"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </section>
-        </Section>
-
+        </Section>  
         <Section id="about" title="">
           <section className=" relative flex flex-col text-white  pt-20 w-full   items-center justify-center gap-7 text-center lg:pt-30">
             <p className="font-bold bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 bg-clip-text text-transparent animate-pulse text-5xl lg:text-7xl ">Sobre Mí</p>
@@ -67,17 +72,11 @@ export default function Home() {
                 la UNSA, donde recopilé, analicé y documenté requerimientos junto a stakeholders y equipo de desarrollo.
               </p>
             </div>
-            <div className="flex justify-center w-full bg-zinc-800/80  md:px-10 ">
-              <div className="absolute w-full">
-                <img
-                  src="images/enredadera.png"
-                  className="opacity-10 object-cover"
-                />
-              </div>
+            <div className="flex justify-center w-full bg-white/6  md:px-10 ">
               <div className="relative flex flex-col lg:flex-row gap-20 items-center">
                 <div className="flex flex-col lg:flex-1 pt-10 gap-10 ">
                   <p className=" font-bold text-4xl text-cyan-600 text-center lg:text-left">MIS CUALIDADES</p>
-                  <div className="flex ext-gray-250 text-gray-300 gap-20 text-left  text-sm  px-12 lg:text-lg">
+                  <div className="flex text-gray-250 text-gray-300 gap-20 text-left  text-sm  px-12 lg:text-lg">
                     <ul className="space-y-2 list-disc ">
                       <li>Comprensiva</li>
                       <li>Aprendizaje rápido</li>

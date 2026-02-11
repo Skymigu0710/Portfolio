@@ -17,7 +17,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/Skymigu0710/UTPConnect",
-            captura: "images/screen1.jpg",
+        
         },
 
         {
@@ -34,7 +34,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/tu-link",
-            captura: "images/screen2.png",
+           
         },
 
         {
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/tu-link",
-            captura: "images/screen3.png",
+         
         },
         {
             title: " IA Repository",
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/Skymigu0710/IAProyects/tree/main",
-            captura: "images/screen4.png",
+            
         },
         {
             title: "Aplicación de la IA en  trastornos emocionales ",
@@ -79,7 +79,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/Skymigu0710/IAProyects/tree/main",
-            captura: "images/screen5.png",
+           
         },
         {
             title: " BI : Analisis de datos del procesos de admisión UNI ",
@@ -95,7 +95,7 @@ export default function ProjectsSection() {
             ],
 
             link: "https://github.com/Skymigu0710/IAProyects/tree/main",
-            captura: "images/screen6.png",
+            
         },
     ];
     return (
