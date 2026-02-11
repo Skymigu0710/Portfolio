@@ -16,7 +16,7 @@ export default function Home() {
             bg-[url('/images/fondo1.gif')] 
             bg-repeat 
             bg-auto 
-            opacity-40">
+            opacity-23">
             </div>
             <div className="relative z-20 flex flex-col px-5 text-center">
               <p className="  text-2xl text-left bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 bg-clip-text text-transparent md:text-6xl lg:text-7xl">
@@ -72,7 +72,7 @@ export default function Home() {
                 la UNSA, donde recopilé, analicé y documenté requerimientos junto a stakeholders y equipo de desarrollo.
               </p>
             </div>
-            <div className="flex justify-center w-full bg-white/6  md:px-10 ">
+            <div className="flex justify-center w-full   md:px-10 ">
               <div className="relative flex flex-col lg:flex-row gap-20 items-center">
                 <div className="flex flex-col lg:flex-1 pt-10 gap-10 ">
                   <p className=" font-bold text-4xl text-cyan-600 text-center lg:text-left">MIS CUALIDADES</p>
