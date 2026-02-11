@@ -99,7 +99,7 @@ export default function ProjectsSection() {
         },
     ];
     return (
-        <div className="grid md:grid-cols-2 lg:px-10 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 mx-3 lg:px-10 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
             ))}

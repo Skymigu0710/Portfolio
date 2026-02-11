@@ -97,3 +97,19 @@ body {
    animation-delay: -2.75s;
     z-index: 10;
 }
+
+@keyframes autoFlip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.auto-flip {
+  animation: autoFlip 20s infinite linear;
+}

@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-[999] transition-all duration-900
-        ${scrolled ? "bg-black-500/50 backdrop-blur " : ""}
+        ${scrolled ? "bg-black/90  " : ""}
       `}
     >
       <div className="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
@@ -39,7 +39,7 @@ export default function Navbar() {
           onClick={() => handleScroll("home")}
           className="text-2xl tracking-widest text-white cursor-pointer md:text-3xl"
         >
-          𝗠𝗔𝗥
+          𝗠
         </span>
 
         <ul className="hidden md:flex gap-16 text-gray-200">
